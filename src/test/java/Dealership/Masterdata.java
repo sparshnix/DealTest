@@ -46,7 +46,9 @@ public class Masterdata extends POM {
 	{
 			 
 		driver.get("https://www.facebook.com");
-	    Assert.assertEquals("2324", "1234");
+		
+	    Assert.assertEquals("sdasd", "1234");
+	    
 	    
 	}
 	
