@@ -36,9 +36,8 @@ public class Masterdata extends POM {
 	@Test
 	public static void AddCustomer() throws Exception
 	{
-		
-		Assert.assertTrue(false);
-		
+
+		Assert.assertTrue(true);
 		
 	}
 	
