@@ -1,0 +1,94 @@
+16:26:16.969 [main] INFO  Dealership.POM - Windows maximized
+16:26:18.923 [main] INFO  Dealership.POM - URL entered
+16:26:19.070 [main] INFO  Dealership.POM - Username field is visible
+16:26:19.391 [main] INFO  Dealership.POM - Password field is visible
+16:26:20.064 [main] INFO  Dealership.POM - Login Button is visible
+16:26:38.013 [main] INFO  Dealership.POM - Login Button is clicked
+16:26:58.170 [main] INFO  Dealership.POM - Title not Matched
+16:26:58.539 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddCustomer
+16:27:02.183 [main] INFO  Dealership.POM - Windows maximized
+16:27:04.144 [main] INFO  Dealership.POM - URL entered
+16:27:04.242 [main] INFO  Dealership.POM - Username field is visible
+16:27:05.157 [main] INFO  Dealership.POM - Password field is visible
+16:27:05.779 [main] INFO  Dealership.POM - Login Button is visible
+16:27:24.755 [main] INFO  Dealership.POM - Login Button is clicked
+16:27:44.960 [main] INFO  Dealership.POM - Title not Matched
+16:27:47.030 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : Test2
+16:31:31.605 [main] INFO  Dealership.POM - Windows maximized
+16:31:33.884 [main] INFO  Dealership.POM - URL entered
+16:31:34.014 [main] INFO  Dealership.POM - Username field is visible
+16:31:34.432 [main] INFO  Dealership.POM - Password field is visible
+16:31:35.400 [main] INFO  Dealership.POM - Login Button is visible
+16:31:54.988 [main] INFO  Dealership.POM - Login Button is clicked
+16:32:15.126 [main] INFO  Dealership.POM - Title not Matched
+16:32:15.454 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddCustomer
+16:32:19.426 [main] INFO  Dealership.POM - Windows maximized
+16:32:21.514 [main] INFO  Dealership.POM - URL entered
+16:32:21.668 [main] INFO  Dealership.POM - Username field is visible
+16:32:21.959 [main] INFO  Dealership.POM - Password field is visible
+16:32:22.494 [main] INFO  Dealership.POM - Login Button is visible
+16:32:42.273 [main] INFO  Dealership.POM - Login Button is clicked
+16:33:02.430 [main] INFO  Dealership.POM - Title not Matched
+16:33:04.345 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : Test2
+16:35:18.477 [main] INFO  Dealership.POM - Windows maximized
+16:35:20.728 [main] INFO  Dealership.POM - URL entered
+16:35:20.839 [main] INFO  Dealership.POM - Username field is visible
+16:35:21.150 [main] INFO  Dealership.POM - Password field is visible
+16:35:21.801 [main] INFO  Dealership.POM - Login Button is visible
+16:35:22.012 [main] INFO  Dealership.POM - Login Button is clicked
+16:35:59.138 [main] INFO  Dealership.POM - Title not Matched
+16:35:59.466 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddCustomer
+16:36:02.973 [main] INFO  Dealership.POM - Windows maximized
+16:36:04.896 [main] INFO  Dealership.POM - URL entered
+16:36:05.042 [main] INFO  Dealership.POM - Username field is visible
+16:36:05.730 [main] INFO  Dealership.POM - Password field is visible
+16:36:06.135 [main] INFO  Dealership.POM - Login Button is visible
+16:36:25.749 [main] INFO  Dealership.POM - Login Button is clicked
+16:36:45.931 [main] INFO  Dealership.POM - Title not Matched
+16:36:48.104 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : Test2
+16:39:27.050 [main] INFO  Dealership.POM - Windows maximized
+16:39:29.426 [main] INFO  Dealership.POM - URL entered
+16:39:29.526 [main] INFO  Dealership.POM - Username field is visible
+16:39:29.703 [main] INFO  Dealership.POM - Password field is visible
+16:39:29.920 [main] INFO  Dealership.POM - Login Button is visible
+16:39:46.275 [main] INFO  Dealership.POM - Login Button is clicked
+16:40:06.427 [main] INFO  Dealership.POM - Title not Matched
+16:40:10.370 [main] INFO  Dealership.POM - Windows maximized
+16:40:12.582 [main] INFO  Dealership.POM - URL entered
+16:40:12.693 [main] INFO  Dealership.POM - Username field is visible
+16:40:12.911 [main] INFO  Dealership.POM - Password field is visible
+16:40:13.507 [main] INFO  Dealership.POM - Login Button is visible
+16:40:13.751 [main] INFO  Dealership.POM - Login Button is clicked
+16:40:52.381 [main] INFO  Dealership.POM - Title not Matched
+16:45:32.399 [main] INFO  Dealership.POM - Windows maximized
+16:45:34.414 [main] INFO  Dealership.POM - URL entered
+16:45:34.515 [main] INFO  Dealership.POM - Username field is visible
+16:45:34.763 [main] INFO  Dealership.POM - Password field is visible
+16:45:36.185 [main] INFO  Dealership.POM - Login Button is visible
+16:45:53.131 [main] INFO  Dealership.POM - Login Button is clicked
+16:46:13.286 [main] INFO  Dealership.POM - Title not Matched
+16:46:13.606 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddCustomer
+16:46:17.413 [main] INFO  Dealership.POM - Windows maximized
+16:46:20.021 [main] INFO  Dealership.POM - URL entered
+16:46:20.147 [main] INFO  Dealership.POM - Username field is visible
+16:46:20.314 [main] INFO  Dealership.POM - Password field is visible
+16:46:20.457 [main] INFO  Dealership.POM - Login Button is visible
+16:46:39.138 [main] INFO  Dealership.POM - Login Button is clicked
+16:46:59.265 [main] INFO  Dealership.POM - Title not Matched
+16:47:01.533 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : Test2
+11:28:05.038 [main] INFO  Dealership.POM - Windows maximized
+11:28:07.549 [main] INFO  Dealership.POM - URL entered
+11:28:08.038 [main] INFO  Dealership.POM - Username field is visible
+11:28:08.770 [main] INFO  Dealership.POM - Password field is visible
+11:28:11.153 [main] INFO  Dealership.POM - Login Button is visible
+11:28:29.783 [main] INFO  Dealership.POM - Login Button is clicked
+11:28:49.818 [main] INFO  Dealership.POM - Title not Matched
+11:28:56.096 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddCustomer
+11:29:04.005 [main] INFO  Dealership.POM - Windows maximized
+11:29:05.958 [main] INFO  Dealership.POM - URL entered
+11:29:06.087 [main] INFO  Dealership.POM - Username field is visible
+11:29:06.498 [main] INFO  Dealership.POM - Password field is visible
+11:29:07.512 [main] INFO  Dealership.POM - Login Button is visible
+11:29:23.234 [main] INFO  Dealership.POM - Login Button is clicked
+11:29:43.279 [main] INFO  Dealership.POM - Title not Matched
+11:29:45.951 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : Test2
