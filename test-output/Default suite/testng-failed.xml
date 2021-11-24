@@ -5,7 +5,6 @@
     <classes>
       <class name="Dealership.Masterdata">
         <methods>
-          <include name="AddCustomer"/>
           <include name="Test2"/>
         </methods>
       </class> <!-- Dealership.Masterdata -->
