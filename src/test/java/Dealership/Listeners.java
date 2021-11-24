@@ -58,6 +58,7 @@ public class Listeners extends Masterdata implements ITestListener {
 					+ "screenshot.png";
 			FileUtils.copyFile(file, new File(destination));
 			System.setProperty("org.uncommons.reportng.escape-output", "false");
+			System.setProperty("org.uncommons.reportng.title", "Blackpurl Test Results");
 			Reporter.log("<a title=\"Automation Testing\" href=\""+destination+"\">Screenshot</a>");
 
 			System.out.println("*******Screenshot captured********");

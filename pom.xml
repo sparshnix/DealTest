@@ -119,6 +119,9 @@
 </dependency>
     
   </dependencies>
+<profiles>
+<profile>
+<id>DealTest</id>
 
   <build>
    <resources>
@@ -172,4 +175,6 @@
       </plugins>
     </pluginManagement>
   </build>
+  </profile>
+</profiles>
 </project>
