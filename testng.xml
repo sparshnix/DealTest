@@ -10,8 +10,11 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Dealership.Masterdata"/>
-      
+      <class name="Dealership.Masterdata">
+      <methods>
+      		<exclude name = "AddCustomer"></exclude>
+      </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

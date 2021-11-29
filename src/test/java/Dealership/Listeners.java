@@ -26,6 +26,7 @@ public class Listeners extends Masterdata implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
+		System.out.println("Running Test : " +result.getName());
 		try {
 			POM.Login();
 		} catch (Exception e) {
@@ -40,6 +41,7 @@ public class Listeners extends Masterdata implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		Reporter.log("Status of execution : " +result.getStatus());
+		log.info("Test case " +result.getName()+ " is passes successfully");
 		
 	}
 

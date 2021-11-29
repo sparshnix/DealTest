@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Sparsh\eclipse-workspace\DealTest\testng.xml</span>
+                    <span>C:\Users\Sparsh\git\DealTest\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Dealership.Masterdata" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Dealership.Masterdata" hash-for-method="AddCustomer">AddCustomer</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Dealership.Masterdata" hash-for-method="AddVendor">AddVendor</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,26 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Dealership.Masterdata</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test2">
-                  </a> <!-- Test2 -->
-                  <span class="method-name">Test2</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [1234] but found [sdasd]
-	at Dealership.Masterdata.Test2(Masterdata.java:50)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -161,9 +127,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddCustomer">
-                  </a> <!-- AddCustomer -->
-                  <span class="method-name">AddCustomer</span>
+                  <a name="AddVendor">
+                  </a> <!-- AddVendor -->
+                  <span class="method-name">AddVendor</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +137,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sparsh\eclipse-workspace\DealTest\testng.xml</span>
+            <span class="header-content">C:\Users\Sparsh\git\DealTest\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,7 +151,11 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Dealership.Masterdata&quot;/&gt;
+      &lt;class name=&quot;Dealership.Masterdata&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;AddCustomer&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Dealership.Masterdata --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -225,20 +195,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test2')
+data.setCell(0, 1, 'AddVendor')
 data.setCell(0, 2, 'Dealership.Masterdata')
-data.setCell(0, 3, 85527);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AddCustomer')
-data.setCell(1, 2, 'Dealership.Masterdata')
-data.setCell(1, 3, 83399);
+data.setCell(0, 3, 82045);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,28 +216,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">AddCustomer</span>
+              <span class="reporter-method-name">AddVendor</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Method is : AddCustomer</span>
+                <span class="reporter-method-output">Test Method is : AddVendor</span>
                 <span class="reporter-method-output">Status of execution : 1</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">Test2</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Method is : Test2</span>
-                <span class="reporter-method-output"><a title="Automation Testing" href="C:\Users\Sparsh\eclipse-workspace\DealTest\\Screenshots\Test2 - 24_11_2021 07_19_29 screenshot.png">Screenshot</a></span>
-                <span class="reporter-method-output">Test Failed - screenshot captured for Method : Test2</span>
-                <span class="reporter-method-output">Status of execution : 2</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Dealership.Masterdata</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">AddCustomer</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -282,14 +246,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Dealership.Masterdata</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">AddCustomer</span>
+                <span class="method-name">AddVendor</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Test2</span>
-                <span class="method-start">83414 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
