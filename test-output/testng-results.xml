@@ -8,12 +8,12 @@
       <![CDATA[Status of execution : 1]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="132745" started-at="2021-11-30T18:16:07 IST" finished-at="2021-11-30T18:18:20 IST">
+  <suite name="Default suite" duration-ms="74570" started-at="2021-11-30T19:55:25 IST" finished-at="2021-11-30T19:56:40 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="132745" started-at="2021-11-30T18:16:07 IST" finished-at="2021-11-30T18:18:20 IST">
+    <test name="Default test" duration-ms="74570" started-at="2021-11-30T19:55:25 IST" finished-at="2021-11-30T19:56:40 IST">
       <class name="Dealership.Masterdata2">
-        <test-method status="PASS" signature="Sample()[pri:0, instance:Dealership.Masterdata2@31ea9581]" name="Sample" duration-ms="132683" started-at="2021-11-30T18:16:07 IST" finished-at="2021-11-30T18:18:20 IST">
+        <test-method status="PASS" signature="Sample()[pri:0, instance:Dealership.Masterdata2@5890e879]" name="Sample" duration-ms="74332" started-at="2021-11-30T19:55:25 IST" finished-at="2021-11-30T19:56:40 IST">
           <reporter-output>
             <line>
               <![CDATA[Test Method is : Sample]]>
@@ -24,6 +24,6 @@
           </reporter-output>
         </test-method> <!-- Sample -->
       </class> <!-- Dealership.Masterdata2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
