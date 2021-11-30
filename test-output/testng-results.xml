@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Test Method is : AddCustomer]]>
-    </line>
-    <line>
-      <![CDATA[Status of execution : 1]]>
-    </line>
-    <line>
-      <![CDATA[Test Method is : AddVendor]]>
+      <![CDATA[Test Method is : Sample]]>
     </line>
     <line>
       <![CDATA[Status of execution : 1]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="186404" started-at="2021-11-30T12:28:38 IST" finished-at="2021-11-30T12:31:45 IST">
+  <suite name="Suite" duration-ms="132745" started-at="2021-11-30T18:16:07 IST" finished-at="2021-11-30T18:18:20 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="186404" started-at="2021-11-30T12:28:38 IST" finished-at="2021-11-30T12:31:45 IST">
-      <class name="Dealership.Masterdata">
-        <test-method status="PASS" signature="AddCustomer()[pri:0, instance:Dealership.Masterdata@6440112d]" name="AddCustomer" duration-ms="106891" started-at="2021-11-30T12:28:38 IST" finished-at="2021-11-30T12:30:25 IST">
+    <test name="Test" duration-ms="132745" started-at="2021-11-30T18:16:07 IST" finished-at="2021-11-30T18:18:20 IST">
+      <class name="Dealership.Masterdata2">
+        <test-method status="PASS" signature="Sample()[pri:0, instance:Dealership.Masterdata2@31ea9581]" name="Sample" duration-ms="132683" started-at="2021-11-30T18:16:07 IST" finished-at="2021-11-30T18:18:20 IST">
           <reporter-output>
             <line>
-              <![CDATA[Test Method is : AddCustomer]]>
+              <![CDATA[Test Method is : Sample]]>
             </line>
             <line>
               <![CDATA[Status of execution : 1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddCustomer -->
-        <test-method status="PASS" signature="AddVendor()[pri:0, instance:Dealership.Masterdata@6440112d]" name="AddVendor" duration-ms="79449" started-at="2021-11-30T12:30:25 IST" finished-at="2021-11-30T12:31:45 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test Method is : AddVendor]]>
-            </line>
-            <line>
-              <![CDATA[Status of execution : 1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddVendor -->
-      </class> <!-- Dealership.Masterdata -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Sample -->
+      </class> <!-- Dealership.Masterdata2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -296,3 +296,11 @@
 12:31:44.999 [main] INFO  Dealership.POM - the text is qavendor-30_11_202112_28_38@gmail.com
 12:31:45.013 [main] INFO  Dealership.POM - User is successfully created
 12:31:45.013 [main] INFO  Dealership.POM - Test case AddVendor is passes successfully
+18:16:26.962 [main] INFO  Dealership.POM - Windows maximized
+18:16:36.157 [main] INFO  Dealership.POM - URL entered
+18:16:36.247 [main] INFO  Dealership.POM - Username field is visible
+18:16:36.407 [main] INFO  Dealership.POM - Password field is visible
+18:16:36.581 [main] INFO  Dealership.POM - Login Button is visible
+18:16:36.670 [main] INFO  Dealership.POM - Login Button is clicked
+18:18:20.323 [main] INFO  Dealership.POM - Title Matched
+18:18:20.340 [main] INFO  Dealership.POM - Test case Sample is passes successfully
