@@ -329,15 +329,15 @@ public class Masterdata extends POM {
 		log.info("User is successfully created");
 	}
 	
-//	@Test
-//	public static void Test2() throws IOException, InterruptedException
-//	{
-//			 
-//		driver.get("https://www.facebook.com");
-//		
-//	    Assert.assertEquals("sdas1234567", "1234");
-//	    
-//	    
-//	}
+	@Test
+	public static void Test2() throws IOException, InterruptedException
+	{
+			 
+		driver.get("https://www.facebook.com");
+		
+	    Assert.assertEquals("sdas1234567", "1234");
+	    
+	    
+	}
 	
 }

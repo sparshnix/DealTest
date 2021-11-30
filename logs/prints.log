@@ -164,3 +164,135 @@
 11:20:36.237 [main] INFO  Dealership.POM - Save button is clicked
 11:20:46.814 [main] INFO  Dealership.POM - email is entered in searchbox
 11:20:57.160 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddVendor
+11:27:49.166 [main] INFO  Dealership.POM - Windows maximized
+11:27:51.015 [main] INFO  Dealership.POM - URL entered
+11:27:51.228 [main] INFO  Dealership.POM - Username field is visible
+11:27:51.900 [main] INFO  Dealership.POM - Password field is visible
+11:27:52.385 [main] INFO  Dealership.POM - Login Button is visible
+11:28:07.922 [main] INFO  Dealership.POM - Login Button is clicked
+11:28:27.943 [main] INFO  Dealership.POM - Title not Matched
+11:28:28.064 [main] INFO  Dealership.POM - Addnew button is displayed
+11:28:28.143 [main] INFO  Dealership.POM - Addnew button is clicked
+11:28:28.238 [main] INFO  Dealership.POM - Customer button is displayed
+11:28:28.326 [main] INFO  Dealership.POM - Customer button is clicked
+11:28:33.409 [main] INFO  Dealership.POM - Customer creation window is opened
+11:28:33.460 [main] INFO  Dealership.POM - Firstname field is visible
+11:28:33.682 [main] INFO  Dealership.POM - Firstname  is filled
+11:28:33.739 [main] INFO  Dealership.POM - Lastname field is visible
+11:28:33.886 [main] INFO  Dealership.POM - Lastname  is filled
+11:28:33.940 [main] INFO  Dealership.POM - Account type field is visible
+11:28:34.019 [main] INFO  Dealership.POM - Account type  is clicked
+11:28:34.183 [main] INFO  Dealership.POM - Account type  is selected
+11:28:34.237 [main] INFO  Dealership.POM - Email field is visible
+11:28:34.466 [main] INFO  Dealership.POM - Email  is filled
+11:28:34.512 [main] INFO  Dealership.POM - Mobilenumber field is visible
+11:28:34.649 [main] INFO  Dealership.POM - Mobilenumber  is filled
+11:28:34.752 [main] INFO  Dealership.POM - Address field is visible
+11:28:35.024 [main] INFO  Dealership.POM - Address  is filled
+11:28:35.075 [main] INFO  Dealership.POM - Country field is visible
+11:28:35.162 [main] INFO  Dealership.POM - Country is clicked
+11:28:35.300 [main] INFO  Dealership.POM - Country Name is selected
+11:28:35.474 [main] INFO  Dealership.POM - City Name is selected
+11:28:35.707 [main] INFO  Dealership.POM - Postcode is selected
+11:28:35.905 [main] INFO  Dealership.POM - Create button is clicked
+11:28:46.346 [main] INFO  Dealership.POM - email is entered in seachbox
+11:28:56.456 [main] INFO  Dealership.POM - the text is sparsh-30_11_202111_27_42@test.com
+11:28:56.466 [main] INFO  Dealership.POM - User is successfully created
+11:28:56.471 [main] INFO  Dealership.POM - Test case AddCustomer is passes successfully
+11:28:59.981 [main] INFO  Dealership.POM - Windows maximized
+11:29:02.594 [main] INFO  Dealership.POM - URL entered
+11:29:03.050 [main] INFO  Dealership.POM - Username field is visible
+11:29:04.002 [main] INFO  Dealership.POM - Password field is visible
+11:29:04.669 [main] INFO  Dealership.POM - Login Button is visible
+11:29:18.761 [main] INFO  Dealership.POM - Login Button is clicked
+11:29:38.788 [main] INFO  Dealership.POM - Title not Matched
+11:29:38.877 [main] INFO  Dealership.POM - Addnew button is displayed
+11:29:38.951 [main] INFO  Dealership.POM - Addnew button is clicked
+11:29:39.007 [main] INFO  Dealership.POM - Vendor button is displayed
+11:29:39.111 [main] INFO  Dealership.POM - Vendor button is clicked
+11:29:49.193 [main] INFO  Dealership.POM - Vendor creation window is opened
+11:29:49.612 [main] INFO  Dealership.POM - Company name is entered
+11:29:50.844 [main] INFO  Dealership.POM - Vendor Account Number is entered
+11:29:51.244 [main] INFO  Dealership.POM - Work Email is entered
+11:29:51.287 [main] INFO  Dealership.POM - Phone number field is visible
+11:29:51.473 [main] INFO  Dealership.POM - Phone number  is filled
+11:29:51.554 [main] INFO  Dealership.POM - Billingaddress field is visible
+11:29:51.953 [main] INFO  Dealership.POM - Billingaddress  is filled
+11:29:52.172 [main] INFO  Dealership.POM - City Name is selected
+11:29:52.438 [main] INFO  Dealership.POM - Billing State is selected
+11:29:52.751 [main] INFO  Dealership.POM - Billing Country is selected
+11:29:52.999 [main] INFO  Dealership.POM - Postcode is selected
+11:29:53.158 [main] INFO  Dealership.POM - Shippingaddressflag is same as billing address
+11:29:53.408 [main] INFO  Dealership.POM - PurchaseTaxLevel is selected
+11:29:53.747 [main] INFO  Dealership.POM - VendorAccountTypeIcon is selected
+11:29:53.891 [main] INFO  Dealership.POM - Save button is clicked
+11:30:04.277 [main] INFO  Dealership.POM - email is entered in searchbox
+11:30:14.367 [main] INFO  Dealership.POM - the text is qavendor-30_11_202111_27_42@gmail.com
+11:30:14.378 [main] INFO  Dealership.POM - User is successfully created
+11:30:14.378 [main] INFO  Dealership.POM - Test case AddVendor is passes successfully
+12:29:17.283 [main] INFO  Dealership.POM - Windows maximized
+12:29:19.467 [main] INFO  Dealership.POM - URL entered
+12:29:19.586 [main] INFO  Dealership.POM - Username field is visible
+12:29:19.763 [main] INFO  Dealership.POM - Password field is visible
+12:29:19.940 [main] INFO  Dealership.POM - Login Button is visible
+12:29:36.788 [main] INFO  Dealership.POM - Login Button is clicked
+12:29:56.812 [main] INFO  Dealership.POM - Title not Matched
+12:29:56.908 [main] INFO  Dealership.POM - Addnew button is displayed
+12:29:56.999 [main] INFO  Dealership.POM - Addnew button is clicked
+12:29:57.078 [main] INFO  Dealership.POM - Customer button is displayed
+12:29:57.176 [main] INFO  Dealership.POM - Customer button is clicked
+12:30:02.273 [main] INFO  Dealership.POM - Customer creation window is opened
+12:30:02.322 [main] INFO  Dealership.POM - Firstname field is visible
+12:30:02.550 [main] INFO  Dealership.POM - Firstname  is filled
+12:30:02.604 [main] INFO  Dealership.POM - Lastname field is visible
+12:30:02.752 [main] INFO  Dealership.POM - Lastname  is filled
+12:30:02.800 [main] INFO  Dealership.POM - Account type field is visible
+12:30:02.896 [main] INFO  Dealership.POM - Account type  is clicked
+12:30:03.066 [main] INFO  Dealership.POM - Account type  is selected
+12:30:03.117 [main] INFO  Dealership.POM - Email field is visible
+12:30:03.355 [main] INFO  Dealership.POM - Email  is filled
+12:30:03.403 [main] INFO  Dealership.POM - Mobilenumber field is visible
+12:30:03.594 [main] INFO  Dealership.POM - Mobilenumber  is filled
+12:30:03.703 [main] INFO  Dealership.POM - Address field is visible
+12:30:04.039 [main] INFO  Dealership.POM - Address  is filled
+12:30:04.097 [main] INFO  Dealership.POM - Country field is visible
+12:30:04.226 [main] INFO  Dealership.POM - Country is clicked
+12:30:04.370 [main] INFO  Dealership.POM - Country Name is selected
+12:30:04.525 [main] INFO  Dealership.POM - City Name is selected
+12:30:04.686 [main] INFO  Dealership.POM - Postcode is selected
+12:30:04.804 [main] INFO  Dealership.POM - Create button is clicked
+12:30:15.384 [main] INFO  Dealership.POM - email is entered in seachbox
+12:30:25.539 [main] INFO  Dealership.POM - the text is sparsh-30_11_202112_28_38@test.com
+12:30:25.556 [main] INFO  Dealership.POM - User is successfully created
+12:30:25.560 [main] INFO  Dealership.POM - Test case AddCustomer is passes successfully
+12:30:30.285 [main] INFO  Dealership.POM - Windows maximized
+12:30:32.165 [main] INFO  Dealership.POM - URL entered
+12:30:32.256 [main] INFO  Dealership.POM - Username field is visible
+12:30:33.175 [main] INFO  Dealership.POM - Password field is visible
+12:30:34.029 [main] INFO  Dealership.POM - Login Button is visible
+12:30:48.806 [main] INFO  Dealership.POM - Login Button is clicked
+12:31:08.832 [main] INFO  Dealership.POM - Title not Matched
+12:31:08.910 [main] INFO  Dealership.POM - Addnew button is displayed
+12:31:09.025 [main] INFO  Dealership.POM - Addnew button is clicked
+12:31:09.096 [main] INFO  Dealership.POM - Vendor button is displayed
+12:31:09.225 [main] INFO  Dealership.POM - Vendor button is clicked
+12:31:19.323 [main] INFO  Dealership.POM - Vendor creation window is opened
+12:31:19.795 [main] INFO  Dealership.POM - Company name is entered
+12:31:21.067 [main] INFO  Dealership.POM - Vendor Account Number is entered
+12:31:21.480 [main] INFO  Dealership.POM - Work Email is entered
+12:31:21.521 [main] INFO  Dealership.POM - Phone number field is visible
+12:31:21.722 [main] INFO  Dealership.POM - Phone number  is filled
+12:31:21.824 [main] INFO  Dealership.POM - Billingaddress field is visible
+12:31:22.303 [main] INFO  Dealership.POM - Billingaddress  is filled
+12:31:22.575 [main] INFO  Dealership.POM - City Name is selected
+12:31:22.901 [main] INFO  Dealership.POM - Billing State is selected
+12:31:23.211 [main] INFO  Dealership.POM - Billing Country is selected
+12:31:23.502 [main] INFO  Dealership.POM - Postcode is selected
+12:31:23.659 [main] INFO  Dealership.POM - Shippingaddressflag is same as billing address
+12:31:23.972 [main] INFO  Dealership.POM - PurchaseTaxLevel is selected
+12:31:24.281 [main] INFO  Dealership.POM - VendorAccountTypeIcon is selected
+12:31:24.442 [main] INFO  Dealership.POM - Save button is clicked
+12:31:34.891 [main] INFO  Dealership.POM - email is entered in searchbox
+12:31:44.999 [main] INFO  Dealership.POM - the text is qavendor-30_11_202112_28_38@gmail.com
+12:31:45.013 [main] INFO  Dealership.POM - User is successfully created
+12:31:45.013 [main] INFO  Dealership.POM - Test case AddVendor is passes successfully
