@@ -117,3 +117,50 @@
 23:44:02.351 [main] INFO  Dealership.POM - the text is qavendor-29_11_202111_42_40@gmail.com
 23:44:02.365 [main] INFO  Dealership.POM - User is successfully created
 23:44:02.370 [main] INFO  Dealership.POM - Test case AddVendor is passes successfully
+11:17:52.430 [main] INFO  Dealership.POM - Windows maximized
+11:17:54.514 [main] INFO  Dealership.POM - URL entered
+11:17:54.763 [main] INFO  Dealership.POM - Username field is visible
+11:17:55.206 [main] INFO  Dealership.POM - Password field is visible
+11:17:56.337 [main] INFO  Dealership.POM - Login Button is visible
+11:19:09.492 [main] INFO  Dealership.POM - Login Button is clicked
+11:19:29.516 [main] INFO  Dealership.POM - Title Matched
+11:19:29.677 [main] INFO  Dealership.POM - Addnew button is displayed
+11:19:29.788 [main] INFO  Dealership.POM - Addnew button is clicked
+11:19:29.948 [main] INFO  Dealership.POM - Customer button is displayed
+11:19:30.187 [main] INFO  Dealership.POM - Customer button is clicked
+11:19:35.336 [main] INFO  Dealership.POM - Customer creation window is opened
+11:19:35.387 [main] INFO  Dealership.POM - Firstname field is visible
+11:19:35.704 [main] INFO  Dealership.POM - Firstname  is filled
+11:19:35.770 [main] INFO  Dealership.POM - Lastname field is visible
+11:19:35.987 [main] INFO  Dealership.POM - Lastname  is filled
+11:19:36.091 [main] INFO  Dealership.POM - Account type field is visible
+11:19:37.617 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddCustomer
+11:19:42.715 [main] INFO  Dealership.POM - Windows maximized
+11:19:44.565 [main] INFO  Dealership.POM - URL entered
+11:19:44.710 [main] INFO  Dealership.POM - Username field is visible
+11:19:45.914 [main] INFO  Dealership.POM - Password field is visible
+11:19:46.933 [main] INFO  Dealership.POM - Login Button is visible
+11:20:00.920 [main] INFO  Dealership.POM - Login Button is clicked
+11:20:20.950 [main] INFO  Dealership.POM - Title not Matched
+11:20:21.088 [main] INFO  Dealership.POM - Addnew button is displayed
+11:20:21.203 [main] INFO  Dealership.POM - Addnew button is clicked
+11:20:21.279 [main] INFO  Dealership.POM - Vendor button is displayed
+11:20:21.413 [main] INFO  Dealership.POM - Vendor button is clicked
+11:20:31.497 [main] INFO  Dealership.POM - Vendor creation window is opened
+11:20:31.935 [main] INFO  Dealership.POM - Company name is entered
+11:20:33.167 [main] INFO  Dealership.POM - Vendor Account Number is entered
+11:20:33.587 [main] INFO  Dealership.POM - Work Email is entered
+11:20:33.626 [main] INFO  Dealership.POM - Phone number field is visible
+11:20:33.835 [main] INFO  Dealership.POM - Phone number  is filled
+11:20:33.934 [main] INFO  Dealership.POM - Billingaddress field is visible
+11:20:34.360 [main] INFO  Dealership.POM - Billingaddress  is filled
+11:20:34.591 [main] INFO  Dealership.POM - City Name is selected
+11:20:34.832 [main] INFO  Dealership.POM - Billing State is selected
+11:20:35.115 [main] INFO  Dealership.POM - Billing Country is selected
+11:20:35.332 [main] INFO  Dealership.POM - Postcode is selected
+11:20:35.522 [main] INFO  Dealership.POM - Shippingaddressflag is same as billing address
+11:20:35.757 [main] INFO  Dealership.POM - PurchaseTaxLevel is selected
+11:20:36.121 [main] INFO  Dealership.POM - VendorAccountTypeIcon is selected
+11:20:36.237 [main] INFO  Dealership.POM - Save button is clicked
+11:20:46.814 [main] INFO  Dealership.POM - email is entered in searchbox
+11:20:57.160 [main] FATAL Dealership.POM - Test Failed - screenshot captured for Method : AddVendor
