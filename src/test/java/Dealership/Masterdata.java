@@ -38,10 +38,13 @@ import org.testng.Reporter;
 @Listeners(Dealership.Listeners.class)
 
 public class Masterdata extends POM {
+	private static Logger log = LogManager.getLogger(POM.class.getName());
 	public static String timestamp = new SimpleDateFormat("-dd_MM_yyyyhh_mm_ss").format(new Date());
 	public static String phonenumber = new SimpleDateFormat("MMyyyymmss").format(new Date());
+	public static String NewCustomer;
+	public static String NewVendor;
+	public static String NewPart;
 	
-	private static Logger log = LogManager.getLogger(POM.class.getName());
 
 	
 	@SuppressWarnings("deprecation")
@@ -75,7 +78,8 @@ public class Masterdata extends POM {
 		WebElement Firstname = driver.findElement(By.id("new-customer-first-name"));
 		Assert.assertTrue(Firstname.isDisplayed(), "Firstname field is missing");
 		log.info("Firstname field is visible");
-		Firstname.sendKeys(firstname + timestamp);
+		NewCustomer = firstname + timestamp;
+		Firstname.sendKeys(NewCustomer);
 		log.info("Firstname  is filled");
 		
 		WebElement Lastname = driver.findElement(By.id("new-customer-last-name"));
@@ -201,7 +205,8 @@ public class Masterdata extends POM {
         
         WebElement Vendorname = driver.findElement(By.id("vendorName"));
         Assert.assertTrue(Vendorname.isDisplayed(), "Vendor name field is missing");
-        Vendorname.sendKeys(companyname + timestamp);
+        NewVendor = companyname + timestamp;
+        Vendorname.sendKeys(NewVendor);
         log.info("Company name is entered");
         Thread.sleep(1000);
         
@@ -329,15 +334,174 @@ public class Masterdata extends POM {
 		log.info("User is successfully created");
 	}
 	
-//	@Test
-//	public static void Test2() throws IOException, InterruptedException
-//	{
-//			 
+
+	@Test(dependsOnMethods = "AddVendor")
+	public static void AddPart() throws InterruptedException {
+		
+		WebElement Addnew = driver.findElement(By.xpath(addnew));
+		Assert.assertTrue(Addnew.isDisplayed(), "Button is missing");
+		log.info("Addnew button is displayed");
+		Addnew.click();
+		Assert.assertTrue(Addnew.isEnabled(), "Button is not clicked");
+		log.info("Addnew button is clicked");
+		
+		WebElement Part = driver.findElement(By.xpath(part));
+		Assert.assertTrue(Part.isDisplayed(), "Button is missing");
+		log.info("Part button is displayed");
+		Part.click();
+		Assert.assertTrue(Part.isEnabled(), "Button is not clicked");
+		log.info("Part button is clicked");
+		
+        Thread.sleep(5000);
+        
+        WebElement PartHeader = driver.findElement(By.xpath(partheader));
+        Assert.assertTrue(PartHeader.isDisplayed(), "Part header is missing");
+        String PartHeadertext = PartHeader.getText();
+		System.out.println(PartHeadertext);
+		Assert.assertEquals(PartHeadertext, "New Merchandise");
+		log.info("Part creation window is opened");
+        
+		WebElement PartNumber = driver.findElement(By.id("partNumber"));
+		Assert.assertTrue(PartNumber.isDisplayed(), "Part Number field is missing");
+		log.info("Part number field is displayed");
+		NewPart = "Part"+ timestamp;
+		PartNumber.sendKeys(NewPart);
+		log.info("Part number is entered");
+		
+		WebElement PartDescription = driver.findElement(By.id("partDescription"));
+		Assert.assertTrue(PartDescription.isDisplayed(), "Part Description  field is missing");
+		log.info("Part Description field is displayed");
+		String Description = "Test Description";
+		PartDescription.sendKeys(Description);
+		log.info("Part Description is entered");
+		
+		WebElement Vendor_Input = driver.findElement(By.id("Vendor_Input"));
+		Assert.assertTrue(Vendor_Input.isDisplayed(), "Vendor_Input field is missing");
+		log.info("Vendor_Input field is displayed");
+		Vendor_Input.sendKeys(NewVendor);
+//		Vendor_Input.sendKeys("Qavendor-30_11_202110_00_48");
+		Thread.sleep(5000);	
+		WebElement VendorList = driver.findElement(By.id("SearchToaddCutomerSuggestions"));
+		VendorList.click();
+		log.info("Vendor_Input is entered");	
+		
+		
+		WebElement MfgPart = driver.findElement(By.id("mfgPart"));
+		Assert.assertTrue(MfgPart.isDisplayed(), "Mfg Part field is missing");
+		log.info("Mfg Part field is displayed");
+		MfgPart.sendKeys("#Mfg_test");
+		log.info("Mfg Part is entered");
+		
+		WebElement SKUNumber = driver.findElement(By.id("SKUNumber"));
+		Assert.assertTrue(SKUNumber.isDisplayed(), "SKU Number is missing");
+		log.info("SKU Number field is displayed");
+		SKUNumber.sendKeys("#SKU_test");
+		log.info("SKU Number is entered");
+		
+//		WebElement PartType = driver.findElement(By.id(parttype));	
+//        Select select1 = new Select(PartType);
+//        select1.deselectByIndex(0);
+//		log.info("Part type is selected");
+		
+		
+		WebElement Category_Input = driver.findElement(By.id("Category_Input"));
+		Assert.assertTrue(Category_Input.isDisplayed(), "Category_Input field is missing");
+		log.info("Category_Input field is displayed");
+		Thread.sleep(2000);	
+//		Vendor_Input.sendKeys(NewVendor);
+		Category_Input.sendKeys("part");
+		Thread.sleep(5000);	
+		WebElement Category_List = driver.findElement(By.id("SearchToaddCutomerSuggestions"));
+		Category_List.click();
+		log.info("Category_Input is entered");	
+        
+		WebElement Tags = driver.findElement(By.xpath(tags));
+		Assert.assertTrue(Tags.isDisplayed(), "Tags field is missing");
+		log.info("Tagsfield is displayed");
+		Tags.click();
+		WebElement Select_tag = driver.findElement(By.id("tag_0"));
+		Select_tag.click();
+		log.info("Tag is selected");
+		
+		((JavascriptExecutor) driver).executeScript("scroll(0,500)");
+		
+//		WebElement ApplicableTax = driver.findElement(By.id("applicableTaxId"));	
+//        Select select2 = new Select(ApplicableTax);
+//        select2.deselectByIndex(0);
+//		log.info("ApplicableTax is selected");
 //		
+		
+//		WebElement Location = driver.findElement(By.xpath(location));
+//		Assert.assertTrue(Location.isDisplayed(), "Location field is missing");
+//		log.info("Location field is displayed");
+//		Location.click();
+//		Thread.sleep(5000);
 //		
-//	    Assert.assertEquals("sdas1234567", "1234");
-//	    
-//	    
-//	}
+//	
+//		WebElement SelectLocation = driver.findElement(By.id("taglistcontainer"));
+//		Actions action = new Actions(driver);
+//		action.moveToElement(SelectLocation).click().perform();
+//		Thread.sleep(5000);
+//		WebElement Select_Location = driver.findElement(By.xpath(tag_1));
+//		Select_Location.click();
+//		log.info("Location is selected");
+		
+		
+		WebElement InStockQty = driver.findElement(By.xpath(inStockQty));
+		Assert.assertTrue(InStockQty.isDisplayed(), "Qty field is missing");
+		log.info("Qty field is displayed");
+		InStockQty.sendKeys("10");
+		log.info("Qty is entered");
+		
+//		WebElement PriceMethod = driver.findElement(By.id("priceMethod"));	
+//        Select select3 = new Select(PriceMethod);
+//        select3.deselectByIndex(0);
+//		log.info("Price Method is selected");
+		
+		WebElement MSRP = driver.findElement(By.id("msrp"));
+		Assert.assertTrue(MSRP.isDisplayed(), "MSRP field is missing");
+		log.info("MSRP field is displayed");
+		MSRP.sendKeys("500");
+		log.info("MSRP is entered");
+		
+		WebElement Retail = driver.findElement(By.id("retail"));
+		Assert.assertTrue(Retail.isDisplayed(), "Retail field is missing");
+		log.info("Retail field is displayed");
+		Retail.sendKeys("400");
+		log.info("Retail is entered");
+		
+		WebElement SalePrice = driver.findElement(By.id("SalePrice"));
+		Assert.assertTrue(SalePrice.isDisplayed(), "SalePrice field is missing");
+		log.info("SalePrice field is displayed");
+		SalePrice.sendKeys("450");
+		log.info("SalePrice is entered");
+		
+		WebElement EnviroFee = driver.findElement(By.id("enviroFee"));
+		Assert.assertTrue(EnviroFee.isDisplayed(), "Environmental Fee field is missing");
+		log.info("Environmental Fee field is displayed");
+		EnviroFee.sendKeys("30");
+		log.info("Environmental Fee is entered");
+		
+		WebElement PartSaveBtn = driver.findElement(By.id("partSaveBtn"));
+		Assert.assertTrue(PartSaveBtn.isDisplayed(), "Part Save Button is missing");
+		log.info("Part Save Button  is displayed");
+		PartSaveBtn.click();
+		log.info("save button is clicked");
+		Thread.sleep(10000);
+		
+		WebElement Searchbox = driver.findElement(By.id("globalSearchStrInput"));
+		Assert.assertTrue(Searchbox.isDisplayed(), "Searchbox is missing");
+		Searchbox.sendKeys(NewPart);
+		log.info("New Part Name is entered in searchbox");
+		Thread.sleep(5000);
+		
+		WebElement VerifyPart = driver.findElement(By.xpath(verifyPart));		
+		Assert.assertTrue(VerifyPart.isDisplayed(), "No relevent data appeared");
+		VerifyPart.getText();
+		log.info("the text is " + VerifyPart.getText());		
+		Assert.assertEquals(NewPart + " - " +Description,VerifyPart.getText(), "Part not found");
+		log.info("part is successfully created");
+		
+	}
 	
 }

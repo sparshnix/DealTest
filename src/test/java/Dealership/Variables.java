@@ -41,13 +41,20 @@ public class Variables {
 	public static String save;
 	public static String purchaseTaxLevel;
 	public static String vendorAccountTypeIcon;
-	
+	public static String part;
+	public static String partheader;
+	public static String parttype;
+	public static String tags;
+	public static String location;
+	public static String tag_1;
+	public static String inStockQty;
+	public static String verifyPart;
 	
 	
 	
 	public static void test() throws IOException
 	{
-	Property.testProperty();
+	Property.testProperty(); 
 	
 	}
 	

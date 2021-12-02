@@ -58,6 +58,13 @@ public class Property extends Variables {
 		vendorHeader = locators.getProperty("vendorHeader");
 		purchaseTaxLevel = locators.getProperty("purchaseTaxLevel");
 		vendorAccountTypeIcon = locators.getProperty("vendorAccountTypeIcon");
-		
+		part = locators.getProperty("part");
+		partheader = locators.getProperty("partheader");
+		parttype = locators.getProperty("parttype");
+		tags = locators.getProperty("tags");
+		location = locators.getProperty("location");
+		tag_1 = locators.getProperty("tag_1");
+		inStockQty = locators.getProperty("inStockQty");
+		verifyPart = locators.getProperty("verifyPart");
 	 }
 }

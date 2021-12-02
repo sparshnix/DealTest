@@ -10,7 +10,7 @@
     <classes>
       <class name="Dealership.Masterdata">
         <methods>
-          <include name="AddVendor"/>
+          <include name="AddPart"/>
         </methods>
       </class> <!-- Dealership.Masterdata -->
     </classes>
