@@ -410,6 +410,7 @@ public class Masterdata extends POM {
 		Thread.sleep(2000);	
 //		Vendor_Input.sendKeys(NewVendor);
 		Category_Input.sendKeys("part");
+		
 		Thread.sleep(5000);	
 		WebElement Category_List = driver.findElement(By.id("SearchToaddCutomerSuggestions"));
 		Category_List.click();
