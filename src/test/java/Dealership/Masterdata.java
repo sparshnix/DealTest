@@ -233,7 +233,7 @@ public class Masterdata extends POM {
 		log.info("Billingaddress field is visible");
 		Billingaddress1.sendKeys("Sample text");
 		Billingaddress2.sendKeys("Sample text");
-		log.info("Billingaddress  is filled");
+		log.info("Billingaddress is filled");
 		
 		WebElement BillingCity = driver.findElement(By.id("billingCity"));
 		Assert.assertTrue(BillingCity.isDisplayed(), "City field is missing");
