@@ -41,10 +41,9 @@ public class Masterdata extends POM {
 	private static Logger log = LogManager.getLogger(POM.class.getName());
 	public static String timestamp = new SimpleDateFormat("-dd_MM_yyyyhh_mm_ss").format(new Date());
 	public static String phonenumber = new SimpleDateFormat("MMyyyymmss").format(new Date());
-	public static String NewCustomer;
-	public static String NewVendor;
-	public static String NewPart;
+	public static String NewCustomer, NewVendor, NewPart, NewLabor, NewKit
 	
+	;
 
 	
 	@SuppressWarnings("deprecation")
@@ -504,5 +503,114 @@ public class Masterdata extends POM {
 		log.info("part is successfully created");
 		
 	}
+	
+	@Test
+	public static void AddLabor() throws InterruptedException
+	
+	{
+		
+		WebElement Addnew = driver.findElement(By.xpath(addnew));
+		Assert.assertTrue(Addnew.isDisplayed(), "Button is missing");
+		log.info("Addnew button is displayed");
+		Addnew.click();
+		Assert.assertTrue(Addnew.isEnabled(), "Button is not clicked");
+		log.info("Addnew button is clicked");
+		
+		WebElement Labor = driver.findElement(By.xpath(labor));
+		Assert.assertTrue(Labor.isDisplayed(), "Button is missing");
+		log.info("Labor button is displayed");
+		Labor.click();
+		Assert.assertTrue(Labor.isEnabled(), "Button is not clicked");
+		log.info("Labor button is clicked");
+        Thread.sleep(5000);
+		
+        WebElement Laborheader = driver.findElement(By.xpath(laborheader));
+		Assert.assertTrue(Laborheader.isDisplayed(), "Button is missing");
+		String Laborheadertext = Laborheader.getText();
+		System.out.println(Laborheadertext);
+		Assert.assertEquals(Laborheadertext, "New Labor");
+		log.info("Labor creation window is opened");
+		
+		
+		WebElement LaborCode = driver.findElement(By.id("Code"));
+		Assert.assertTrue(LaborCode.isDisplayed(), "LaborCode field is missing");
+		log.info("Labor code field is displayed");
+		NewLabor = laborcode + timestamp;
+		LaborCode.sendKeys(NewLabor);
+		log.info("labor code is entered");
+		
+		WebElement LaborDescription = driver.findElement(By.id("Description"));
+		Assert.assertTrue(LaborDescription.isDisplayed(), "Description field is missing");
+		log.info("Description field is displayed");
+		String Description = "Test Description";
+		LaborDescription.sendKeys(Description);
+		log.info("Description is entered");
+		
+		WebElement Hours = driver.findElement(By.id("Hours"));
+		Assert.assertTrue(Hours.isDisplayed(), "Hours field is missing");
+		log.info("Hours field is displayed");
+		Hours.sendKeys("8");
+		log.info("Hours entered");
+		
+		WebElement Rate = driver.findElement(By.id("Rate"));
+		Assert.assertTrue(Rate.isDisplayed(), "Rate field is missing");
+		log.info("Rate field is displayed");
+		Rate.sendKeys("20");
+		log.info("Rate entered");
+		
+		WebElement Category_Input = driver.findElement(By.id("Category_Input"));
+		Assert.assertTrue(Category_Input.isDisplayed(), "Category_Input field is missing");
+		log.info("Category_Input field is displayed");
+		Category_Input.clear();
+		Category_Input.sendKeys("labor");
+		Thread.sleep(10000);
+		WebElement LaborList = driver.findElement(By.id("SearchToaddCutomerSuggestions"));
+		LaborList.click();
+		log.info("Category_Input entered");
+		Thread.sleep(5000);
+		
+		WebElement FormsTag = driver.findElement(By.xpath(formstag));
+		Assert.assertTrue(FormsTag.isDisplayed(), "FormsTag field is missing");
+		log.info("FormsTag field is displayed");
+		FormsTag.click();	
+		log.info("FormsTag is entered");
+
+		
+		WebElement selectTag = driver.findElement(By.xpath(selecttag));
+		Assert.assertTrue(selectTag.isDisplayed(), "select Tag field is missing");
+		log.info("selectTag field is displayed");
+		selectTag.click();
+		log.info("selectTag is entered");
+		
+		WebElement Applicabletax = driver.findElement(By.xpath(applicabletax));
+		Assert.assertTrue(Applicabletax.isDisplayed(), "Applicabletax field is missing");
+		log.info("Applicabletax field is displayed");
+		Select select = new Select(Applicabletax);
+		select.selectByIndex(1);
+		log.info("Applicabletax is entered");
+		
+		
+		WebElement SaveButton = driver.findElement(By.xpath("savebutton"));
+		Assert.assertTrue(SaveButton.isDisplayed(), "SaveButton is missing");
+		log.info("SaveButton is displayed");
+		SaveButton.click();
+		log.info("SaveButton is clicked");
+		
+		WebElement Searchbox = driver.findElement(By.id("globalSearchStrInput"));
+		Assert.assertTrue(Searchbox.isDisplayed(), "Searchbox is missing");
+		Searchbox.sendKeys(NewLabor);
+		log.info("Labor Name is entered in searchbox");
+		Thread.sleep(5000);
+		
+		WebElement Verifylabor = driver.findElement(By.xpath(verifylabor));		
+		Assert.assertTrue(Verifylabor.isDisplayed(), "No relevent data appeared");
+		log.info("the text is " + Verifylabor.getText());		
+		Assert.assertEquals(NewLabor + " - " +Description,Verifylabor.getText(), "Labor not found");
+		log.info("Labor is successfully created");
+		
+	}
+	
+
+	
 	
 }
