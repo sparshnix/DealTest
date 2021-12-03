@@ -41,7 +41,7 @@ public class Listeners extends Masterdata implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		Reporter.log("Status of execution : " +result.getStatus());
-		log.info("Test case " +result.getName()+ " is passes successfully");
+		log.info("Test case " +result.getName()+ " passes successfully");
 		
 	}
 
